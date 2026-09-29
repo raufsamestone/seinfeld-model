@@ -26,8 +26,9 @@ is not a grant of those rights.
 
 Other downloaded sources and the earlier multi-source pilot are not inputs to
 the active run. No source audio, derived segments, or model adapter is uploaded
-or bundled with the website. Before public release, resolve source/output
-rights and have a human review the output for similarity and memorization.
+or bundled with the repository. The two curated generated examples in
+`samples/` are published for listening. Source and output rights have not been
+independently verified; review them before distributing additional material.
 
 ## Retired experiments
 
