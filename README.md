@@ -15,10 +15,7 @@ Local fine-tuning and generation experiments for short, Seinfeld-inspired slap-b
 
 ## Samples
 
-- [Sample 1 · seed 307 · 3.6 seconds](https://raw.githubusercontent.com/raufsamestone/seinfeld-model/main/samples/seinfeld-1.wav)
-- [Sample 2 · seed 410 · 3.6 seconds](https://raw.githubusercontent.com/raufsamestone/seinfeld-model/main/samples/seinfeld-2.wav)
-
-More samples are on the [Seinfeld showcase](https://berkay.fyi/seinfeld).
+[Listen Samples](https://berkay.fyi/seinfeld)
 
 ## Model and training
 
