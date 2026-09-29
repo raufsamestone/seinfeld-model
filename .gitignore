@@ -1,0 +1,13 @@
+research/sources/*.wav
+output/
+.env
+.env.*
+!.env.example
+__pycache__/
+.venv/
+.cache/
+.runtime/
+experiments/
+models/
+.DS_Store
+loss_by_timestep.bin

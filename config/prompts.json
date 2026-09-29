@@ -1,0 +1,9 @@
+{
+  "use_tags": true,
+  "use_paths": false,
+  "use_fixed": false,
+  "tag_keys": ["prompt"],
+  "hide_tag_names": true,
+  "shuffle": false,
+  "balance": {"tags": 100}
+}

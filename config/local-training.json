@@ -1,0 +1,14 @@
+{
+  "upstream": "https://github.com/Stability-AI/stable-audio-3.git",
+  "upstream_revision": "3a82c807b69cf4b7c5c05270011a5d5e47abac18",
+  "weights_repository": "stabilityai/stable-audio-3-optimized",
+  "weights_revision": "da6edc54ddba10bfd79a077102ded687f80e882b",
+  "model": "medium",
+  "codec": "same-l",
+  "prompt": "A short dry slap bass sitcom transition sting, punchy low notes, percussive pops, syncopated funk bass phrase.",
+  "seed": 20260929,
+  "rank": 16,
+  "learning_rate": 0.0001,
+  "latent_crop_length": 80,
+  "export_seeds": [101, 203, 307, 409, 503, 607]
+}

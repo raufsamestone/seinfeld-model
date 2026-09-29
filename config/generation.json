@@ -1,0 +1,12 @@
+{
+  "dit": "medium",
+  "decoder": "same-l",
+  "prompt": "A short dry slap bass sitcom transition sting, punchy low notes, percussive pops, syncopated funk bass phrase.",
+  "seconds": 3.6,
+  "sampling_steps": 8,
+  "seed": 410,
+  "cfg": 1.0,
+  "adapter": "models/runs/slap-bass-1000-1790717937566268000/d62c9775/checkpoints/slap-bass-1000-1790717937566268000-step=1000-epoch=16.safetensors",
+  "adapter_strength": 1.0,
+  "output": "output/generated/slap-bass-step-1000-seed-{seed}.wav"
+}
