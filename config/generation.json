@@ -6,7 +6,9 @@
   "sampling_steps": 8,
   "seed": 410,
   "cfg": 1.0,
-  "adapter": "models/runs/slap-bass-1000-1790717937566268000/d62c9775/checkpoints/slap-bass-1000-1790717937566268000-step=1000-epoch=16.safetensors",
+  "adapter": "models/adapters/seinfeld-bass-step-1000.safetensors",
+  "adapter_url": "https://github.com/raufsamestone/seinfeld-model/releases/download/model-v0.1.0/seinfeld-bass-step-1000.safetensors",
+  "adapter_sha256": "218b9a841ed4208fe26a55b1f30301dfe42511c3671fba008508abd6ff2515c2",
   "adapter_strength": 1.0,
   "output": "output/generated/slap-bass-step-1000-seed-{seed}.wav"
 }

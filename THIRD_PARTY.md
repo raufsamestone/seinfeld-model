@@ -10,8 +10,10 @@
 - Codec: SAME-L. Text encoder: Google's T5Gemma.
 - Stable Audio weights: Stability AI Community License, https://stability.ai/license .
   T5Gemma has its own upstream terms.
-- Not covered by this repository's MIT code license. Preserve required upstream
-  notices/license files when distributing an adapter/package.
+- The published adapter is an experimental rank-16 DoRA fine-tune derived from
+  Stable Audio 3 Medium. Its distribution follows the Stability AI Community
+  License; see `NOTICE` and `STABILITY_COMMUNITY_LICENSE.md`. The repository's
+  MIT license covers code only.
 - Runtime versions: requirements-mlx.txt.
 
 ## Private single-source research recording
@@ -20,13 +22,15 @@ The active experiment uses one local file:
 `research/sources/seinfeld-transition-music-only.wav`, from the YouTube video
 “Seinfeld Scene Transition Music (Music Only) - v3” (video ID `B7IRCudlYPg`).
 The video ID is provenance only, not a project directory name. Its SHA-256 is
-recorded in the derived dataset manifest. Its license, training rights, and
-generated-output publication rights are unverified. A public YouTube download
-is not a grant of those rights.
+recorded in the derived dataset manifest. Its license and training rights have
+not been independently verified. A public YouTube download is not a grant of
+those rights. No source audio or derived training clips are included in Git or
+in the model release. Publishing adapter weights does not resolve rights in the
+material used to train them.
 
 Other downloaded sources and the earlier multi-source pilot are not inputs to
-the active run. No source audio, derived segments, or model adapter is uploaded
-or bundled with the repository. The two curated generated examples in
+the active run. Source audio and derived segments are not uploaded or bundled.
+The adapter is distributed separately as a GitHub Release asset. The two curated generated examples in
 `samples/` are published for listening. Source and output rights have not been
 independently verified; review them before distributing additional material.
 

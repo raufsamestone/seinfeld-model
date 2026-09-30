@@ -13,6 +13,8 @@
 
 Local fine-tuning and generation experiments for short, Seinfeld-inspired slap-bass cues.
 
+**Powered by Stability AI.** The released adapter is a DoRA fine-tune of Stable Audio 3 Medium. It is an experimental model artifact, not a standalone model: generation also requires the Stable Audio 3 runtime and base weights under their respective terms.
+
 ## Samples
 
 [Listen Samples](https://berkay.fyi/seinfeld)
@@ -21,7 +23,7 @@ Local fine-tuning and generation experiments for short, Seinfeld-inspired slap-b
 
 Stable Audio 3 Medium was fine-tuned locally on Apple Silicon with Python, MLX and a rank-16 DoRA adapter. The experiment used one 244-second WAV split into 67 non-overlapping clips: 60 training and 7 holdout. Training ran for 1,000 steps at a `1e-4` learning rate. Inference uses the SAME-L codec and T5Gemma text encoder.
 
-This is adapter fine-tuning, not training a foundation model from scratch. The training recording, derived clips and adapter are not bundled. The two sample WAVs are in `samples/`. See [`research/local-training.md`](research/local-training.md) and [`THIRD_PARTY.md`](THIRD_PARTY.md) for the workflow and provenance.
+This is adapter fine-tuning, not training a foundation model from scratch. The training recording and derived clips are not bundled. Download the adapter from the [GitHub Release](https://github.com/raufsamestone/seinfeld-model/releases/tag/model-v0.1.0); `scripts/generate.py` downloads it on first run and verifies its SHA-256. The two sample WAVs are in `samples/`. See [`research/local-training.md`](research/local-training.md) and [`THIRD_PARTY.md`](THIRD_PARTY.md) for the workflow and provenance.
 
 ## Generate locally
 
@@ -35,7 +37,7 @@ uv pip install --python .runtime/mlx-venv/bin/python -r requirements-mlx.txt
 .runtime/mlx-venv/bin/python scripts/local_model.py download
 ```
 
-Provide your locally trained adapter at the path in `config/generation.json`, edit that config, then generate:
+Generate with the published adapter (the first run downloads about 36 MB):
 
 ```sh
 .runtime/mlx-venv/bin/python scripts/generate.py
@@ -49,4 +51,4 @@ The WAV is written under `output/generated/`. Training and generation settings l
 python3 -m unittest discover -s tests -v
 ```
 
-See [`LICENSE`](LICENSE) for this repository's code license. Third-party model terms and media rights are separate.
+The adapter is distributed under the Stability AI Community License terms applicable to Stable Audio 3. See [`NOTICE`](NOTICE) and [`STABILITY_COMMUNITY_LICENSE.md`](STABILITY_COMMUNITY_LICENSE.md). This repository's MIT license covers code only; it does not license the adapter, Stable Audio base weights, or source media.

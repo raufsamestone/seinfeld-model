@@ -1,0 +1,11 @@
+This Stability AI Model is licensed under the Stability AI Community License,
+Copyright © Stability AI Ltd. All Rights Reserved.
+
+This repository distributes a rank-16 DoRA fine-tune of Stable Audio 3 Medium.
+The model was changed by adapter fine-tuning for short slap-bass transition
+music. The adapter is a derivative work of Stability AI model materials and is
+not a standalone generative model.
+
+The full Stability AI Community License Agreement is included in
+STABILITY_COMMUNITY_LICENSE.md. The code license in LICENSE does not apply to
+the model adapter or upstream model weights.
