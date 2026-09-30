@@ -23,7 +23,7 @@ Local fine-tuning and generation experiments for short, Seinfeld-inspired slap-b
 
 Stable Audio 3 Medium was fine-tuned locally on Apple Silicon with Python, MLX and a rank-16 DoRA adapter. The experiment used one 244-second WAV split into 67 non-overlapping clips: 60 training and 7 holdout. Training ran for 1,000 steps at a `1e-4` learning rate. Inference uses the SAME-L codec and T5Gemma text encoder.
 
-This is adapter fine-tuning, not training a foundation model from scratch. The training recording and derived clips are not bundled. Download the adapter from the [GitHub Release](https://github.com/raufsamestone/seinfeld-model/releases/tag/model-v0.1.0); `scripts/generate.py` downloads it on first run and verifies its SHA-256. The two sample WAVs are in `samples/`. See [`research/local-training.md`](research/local-training.md) and [`THIRD_PARTY.md`](THIRD_PARTY.md) for the workflow and provenance.
+This is adapter fine-tuning, not training a foundation model from scratch. The training recording and derived clips are not bundled. Download the adapter from the [GitHub Release](https://github.com/raufsamestone/seinfeld-model/releases/tag/model-v0.1.1); `scripts/generate.py` downloads it on first run and verifies its SHA-256. The two sample WAVs are in `samples/`. See [`research/local-training.md`](research/local-training.md) and [`THIRD_PARTY.md`](THIRD_PARTY.md) for the workflow and provenance.
 
 ## Generate locally
 
